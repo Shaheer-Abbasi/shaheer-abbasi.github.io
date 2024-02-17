@@ -3,11 +3,13 @@
   --secondary: #0091ff;     
   --accent: #0033ff;      
   --neutral: #392620;    
-  --base-100: #1f2624;      
+  --base-100: #1f2624; 
   --info: #0091d7;     
   --success: #6de700;      
   --warning: #ffb300;      
   --error: #d64654;
+
+  --base-200: #fffeff; 
  }
 
 * {
@@ -29,7 +31,7 @@ body {
 
 .navbar > h2 {
   margin-left: 2rem;
-  color: var(--base-100);
+  color: var(--base-200);
 }
 
 .nav-options {
@@ -42,11 +44,11 @@ body {
 
 .nav-options li {
   padding: 14px 4px 14px 4px;
-  color: var(--base-100);
+  color: var(--base-200);
   font-size: large;
 }
 
 .nav-options li:hover {
   background-color: var(--accent);
-  color: white;
+  color: var(--base-200);
 }
