@@ -126,6 +126,20 @@ body {
   height: 100%;
 }
 
+.projects-section {
+  display: flex;
+  width: 100vw;
+  height: 500px;
+  background-color: var(--info);
+}
+
+.projects-container {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  background-color: var(--accent);
+}
+
 
 @media screen and (max-width: 790px) {
   body{
