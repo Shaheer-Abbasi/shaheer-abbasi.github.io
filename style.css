@@ -127,12 +127,12 @@ body {
 }
 
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 790px) {
   body{
-    width: 490px;
+    width: 790px;
   }
 
   .hero {
-    width: 490px;
+    width: 790px;
   }
 }
