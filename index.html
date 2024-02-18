@@ -19,10 +19,22 @@
     <nav class="navbar">
         <h2>Shaheer Abbasi</h2>
         <ul class="nav-options">
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li><i class="fa-brands fa-github"></i></li>
+            <a href="#projects">
+                <li class="list-items">Projects</li>
+            </a>
+            <a href="#about">
+                <li class="list-items">About</li>
+            </a>
+            <a href="#contact">
+                <li class="list-items">Contact</li>
+            </a>
+            <li>
+                <a href="https://github.com/Shaheer-Abbasi" target="_blank">
+                    <i class="fa-brands fa-github fa-2xl">
+
+                    </i>
+                </a>
+            </li>
         </ul>
     </nav>
 
@@ -33,7 +45,7 @@
             </div>
     
             <div class="intro-text">
-                Scroll down to view projects I that have worked on below.
+                Scroll down to view projects I that have worked on.
             </div>
         </div>
 
@@ -45,26 +57,62 @@
         </div>
     </div>
 
-    <div class="projects-section">
-        <h1>Projects</h1>
+    <div id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <p class="project-instructions">Click the project's name or card to open the project</p>
         <div class="projects-container">
-            Hello 
+            <div class="project1-display">
+                <a href="https://github.com/Shaheer-Abbasi/AI-Tic-Tac-Toe" target="_blank">
+                    <div id="card1" class="project-card">
+                        <img src="./images/Tic-Tac-Toe.png.png" width="300px" height="300px" alt="Tic-Tac-Toe" />
+                    </div>
+                </a>
+                <a href="https://github.com/Shaheer-Abbasi/AI-Tic-Tac-Toe" target="_blank">
+                    <p>Ai Tic-Tac-Toe</p>
+                </a>
+            </div>
+            <div class="project2-display">
+                <a href="https://palworld-calculator.vercel.app/" target="_blank">
+                    <div id="card2" class="project-card">
+                        <img src="./images/palworld-chikipi.png.png" alt="palworld-chikipi" />
+                    </div>
+                </a>
+                <a href="https://palworld-calculator.vercel.app/" target="_blank">
+                    <p>Palworld Breeding Calculator</p>
+                </a>
+            </div>
+            <div class="project3-display">
+                <a href="https://github.com/Shaheer-Abbasi/password-generator" target="_blank">
+                    <div id="card3" class="project-card">
+                        <img src="./images/purple-passowrd-lock.png.png" width="275px" height="285px" alt="password-lock" />
+                    </div>
+                </a>
+                <a href="https://github.com/Shaheer-Abbasi/password-generator" target="_blank">
+                    <p>Password Generator</p>
+                </a>      
+            </div>
         </div>
     </div>
 
-    <div class="about-section">
+    <div id="about" class="about-section">
         <div class="text-container">
             <h2>About Me</h2>
-            <p>I am currently a senior in high school looking foward to attending the University of Houston in the fall. I do not have any work experience currently,
-                but I would be thrilled for any oppurtunities. If you would like to contact me, scroll below to find my LinkedIn and Email. 
+            <p>
+                I am currently a senior in high school looking foward to attending the University of Houston in the fall. I have always loved coding and my dream is to
+                become a software engineer. I do not have any work experience currently, but I would be thrilled for any oppurtunities. 
+                If you would like to contact me, please send me a message to LinkedIn or email me. Thank you for visiting my page! 
             </p>
         </div>
     </div>
 
-    <div class="contact-section">
+    <div id="contact" class="contact-section">
         <div class="logo-container">
-            <i class="fa-brands fa-linkedin fa-4x"></i>
-            <i class="fa-solid fa-envelope fa-4x"></i>
+            <a href="https://www.linkedin.com/in/shaheer-abbasi-6133342b4/" target="_blank">
+                <i id="linkedIn-logo" class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
+            <a href="mailto: abbasi.shaheer14@gmail.com" target="_blank">
+                <i id="email-logo" class="fa-solid fa-envelope fa-3x"></i>
+            </a>
         </div>
     </div>
 
