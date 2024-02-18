@@ -40,10 +40,15 @@ body {
   background-color: var(--secondary);
 }
 
-.navbar > h2 {
+.my-name {
   margin-left: 2rem;
   color: var(--base-200);
-  font-size: 30px;
+  font-size: 32px;
+}
+
+.my-name:hover {
+  color: var(--accent);
+  filter: brightness(85%);
 }
 
 .nav-options {
@@ -51,15 +56,14 @@ body {
   min-height: 100%;
   list-style-type: none;
   margin-right: 2rem;
-  gap: 2rem;
   cursor: pointer;
   align-items: center;
 }
 
 .nav-options li {
-  height: 100%;
+  height: 110%;
   align-items: center;
-  padding: 18px 4px 18px 4px;
+  padding: 22px 14px 22px 14px;
   color: var(--base-200);
   font-size: larger;
   font-weight: 500;
@@ -71,9 +75,15 @@ a, a:hover, a:visited, a:active {
   text-decoration: none;
 }
 
-.nav-options li:hover {
+.list-items:hover {
   background-color: var(--accent);
   color: var(--base-200);
+}
+
+.github-logo:hover {
+  background-color: none;
+  color: var(--accent);
+  filter: brightness(50%);
 }
 
 .hero {
@@ -89,6 +99,7 @@ a, a:hover, a:visited, a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 2rem;
   height: 100%;
   width: 80%;
   margin-left: 3rem;
@@ -108,9 +119,13 @@ a, a:hover, a:visited, a:active {
   color: var(--base-200);
   font-weight: 400;
   font-size: 40px;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   padding-left: 20px;
   padding-right: 50px;
+}
+
+.intro-text2 {
+  display: none;
 }
 
 .img-box-parent {
@@ -166,12 +181,25 @@ a, a:hover, a:visited, a:active {
   padding-right: 75px;
   height: 75%;
   margin: auto;
-  background-color: var(--background);
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 4rem;
+}
+
+.project-row1 {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  gap: 4rem;
+}
+
+.project-row2 {
+  margin-left: 0;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 }
 
 .project-instructions {
@@ -196,7 +224,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .projects-container p:hover {
-  color: var(--success);
+  color: var(--contact);
 }
 
 #card1 {
@@ -212,7 +240,7 @@ a, a:hover, a:visited, a:active {
   margin-top: 8rem;
   justify-content: center;
   height: auto;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
   text-align: center;
 }
@@ -221,7 +249,7 @@ a, a:hover, a:visited, a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60vw;
+  width: 80vw;
   gap: 2rem;
 }
 
@@ -297,18 +325,49 @@ a, a:hover, a:visited, a:active {
   }
 
   .intro-header{
-    margin-top: 4rem;
+    margin-top: 10rem;
   }
 
   .intro-text{
-    margin-top: 2rem;
-    margin-bottom: 0;
+    display: none;
+  }
+
+  .intro-text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--base-200);
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 4rem;
   }
 
   .img-box-parent{
     width: 80%;
     margin-right: 0;
     margin-left: 0rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container {
+    width: 1200px;
+  }
+
+  .text-container > h2 {
+    font-style: italic;
+    margin-top: 1rem;
+    color: white;
+    font-size: 36px;
+  }
+  
+  .text-container > p {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 32px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
 
@@ -332,13 +391,35 @@ a, a:hover, a:visited, a:active {
     margin-top: 1rem;
   }
 
+  #card2 {
+    margin-top: 1rem;
+  }
+
   #card3 {
     margin-right: 0;
-    margin-bottom: 1rem;
   }
 
   .project3-display{
     margin-bottom: 0.5rem;
+  }
+
+  .text-container {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .my-name {
+    font-size: 34px;
+  }
+
+  .nav-options li{
+    padding: 24px 14px 24px 14px;
+    font-size: 28px;
+  }
+  
+  .text-container {
+    width: 800px;
   }
 }
 
@@ -360,6 +441,10 @@ a, a:hover, a:visited, a:active {
     width: 80%;
     margin-left: 0;
   }
+
+  .text-container {
+    width: 650px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -372,7 +457,7 @@ a, a:hover, a:visited, a:active {
     margin-right: 0;
   }
 
-  .text-container{
-    width: 375px;
+  .text-container {
+    width: 625px;
   }
 }
