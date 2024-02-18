@@ -17,7 +17,9 @@
 </head>
 <body>
     <nav class="navbar">
-        <h2>Shaheer Abbasi</h2>
+        <a href="#hero">
+            <h2 class="my-name">Shaheer Abbasi</h2>
+        </a>    
         <ul class="nav-options">
             <a href="#projects">
                 <li class="list-items">Projects</li>
@@ -28,17 +30,15 @@
             <a href="#contact">
                 <li class="list-items">Contact</li>
             </a>
-            <li>
+            <li class="github-logo">
                 <a href="https://github.com/Shaheer-Abbasi" target="_blank">
-                    <i class="fa-brands fa-github fa-2xl">
-
-                    </i>
+                    <i class="fa-brands fa-github fa-2xl"></i>
                 </a>
             </li>
         </ul>
     </nav>
 
-    <div class="hero">
+    <div id="hero" class="hero">
         <div class="intro-parent">
             <div class="intro-header">
                 Hi there, I am Shaheer Abbasi, an aspiring software engineer!
@@ -51,45 +51,51 @@
 
         <div class="img-box-parent">
             <div class="img-container">
-                <img src="./images/dexters-laboratory-costume.webp" width="250px" height="300px" ="kratos-avatar" />
+                <img src="./images/dexters-laboratory-costume.webp" width="250px" height="300px" alt="dexter-avatar" />
             </div>
-            <p>I will update this page with my actual picture eventually but, for now, enjoy this picture of Dexter!</p>
         </div>
+    </div>
+    <div class="intro-text2">
+        Scroll down to view projects I that have worked on.
     </div>
 
     <div id="projects" class="projects-section">
         <h2>Projects</h2>
         <p class="project-instructions">Click the project's name or card to open the project</p>
         <div class="projects-container">
-            <div class="project1-display">
-                <a href="https://github.com/Shaheer-Abbasi/AI-Tic-Tac-Toe" target="_blank">
-                    <div id="card1" class="project-card">
-                        <img src="./images/Tic-Tac-Toe.png.png" width="300px" height="300px" alt="Tic-Tac-Toe" />
-                    </div>
-                </a>
-                <a href="https://github.com/Shaheer-Abbasi/AI-Tic-Tac-Toe" target="_blank">
-                    <p>Ai Tic-Tac-Toe</p>
-                </a>
+            <div class="project-row1">
+                <div class="project1-display">
+                    <a href="https://github.com/Shaheer-Abbasi/AI-Tic-Tac-Toe" target="_blank">
+                        <div id="card1" class="project-card">
+                            <img src="./images/Tic-Tac-Toe.png.png" width="300px" height="300px" alt="Tic-Tac-Toe" />
+                        </div>
+                    </a>
+                    <a href="https://github.com/Shaheer-Abbasi/AI-Tic-Tac-Toe" target="_blank">
+                        <p>Ai Tic-Tac-Toe</p>
+                    </a>
+                </div>
+                <div class="project2-display">
+                    <a href="https://palworld-calculator.vercel.app/" target="_blank">
+                        <div id="card2" class="project-card">
+                            <img src="./images/palworld-chikipi.png.png" alt="palworld-chikipi" />
+                        </div>
+                    </a>
+                    <a href="https://palworld-calculator.vercel.app/" target="_blank">
+                        <p>Palworld Breeding Calculator</p>
+                    </a>
+                </div>
             </div>
-            <div class="project2-display">
-                <a href="https://palworld-calculator.vercel.app/" target="_blank">
-                    <div id="card2" class="project-card">
-                        <img src="./images/palworld-chikipi.png.png" alt="palworld-chikipi" />
-                    </div>
-                </a>
-                <a href="https://palworld-calculator.vercel.app/" target="_blank">
-                    <p>Palworld Breeding Calculator</p>
-                </a>
-            </div>
-            <div class="project3-display">
-                <a href="https://github.com/Shaheer-Abbasi/password-generator" target="_blank">
-                    <div id="card3" class="project-card">
-                        <img src="./images/purple-passowrd-lock.png.png" width="275px" height="285px" alt="password-lock" />
-                    </div>
-                </a>
-                <a href="https://github.com/Shaheer-Abbasi/password-generator" target="_blank">
-                    <p>Password Generator</p>
-                </a>      
+            <div class="project-row2">
+                <div class="project3-display">
+                    <a href="https://github.com/Shaheer-Abbasi/password-generator" target="_blank">
+                        <div id="card3" class="project-card">
+                            <img src="./images/purple-passowrd-lock.png.png" width="275px" height="285px" alt="password-lock" />
+                        </div>
+                    </a>
+                    <a href="https://github.com/Shaheer-Abbasi/password-generator" target="_blank">
+                        <p>Password Generator</p>
+                    </a>      
+                </div>
             </div>
         </div>
     </div>
