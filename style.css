@@ -116,6 +116,13 @@ a, a:hover, a:visited, a:active {
   font-size: 64px;
 }
 
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  /* border: 1px solid var(--error); */
+}
+
 .intro-text {
   color: var(--base-200);
   font-weight: 400;
@@ -328,6 +335,10 @@ a, a:hover, a:visited, a:active {
   .intro-parent{
     width: 80%;
     margin-left: 0rem;
+  }
+
+  .arrow-container {
+    display: none;
   }
 
   .intro-header{
